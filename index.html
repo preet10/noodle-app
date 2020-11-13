@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninja Food</title>
+  <!-- materialize icons, css & js -->
+  <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.0.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</head>
+<body class="grey lighten-4">
+
+  <!--  top nav-->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">Food<span>Ninja</span></a>
+      <span class="right grey-text text-darken-1"> 
+        <i class="material-icons sidenav-trigger" data-target="side-menu"> menu</i>   
+
+      </span>
+    </div>
+  </nav>
+  
+ <!-- side nav -->
+ <ul id="side-menu" class="sidenav side-menu">
+   <li><a class"subheader>Food Ninja</a></li>
+   <li><a href="/" class="waves-effect">Home</a></li>
+   <li><a href="/pages/about.html" class="waves-effect"> About</a></li>
+   <li><div class="divider"></div></li>
+   <li><a href="/pages/contact.html" class="waves-effect">
+    <i class="material-icons">mail_outline</i> Contact</a>
+   </li>
+ </ul> 
+ 
+ <!-- RECIPES-->
+ <div class="recipies container grey-text text-darken-1">
+  <div class="card-panel recipie white row">
+    <img src="img/dish.png" alt="recipie thumb">
+    <div class="recipie-details">
+      <div class="recipie-title">Edamame Noodles</div>
+      <div class="recipie-ingredients">Edamame beans, Noodles, Garlic, oil</div>
+    </div>
+    <div class="recipie-delete">
+      <i class="material-icons">delete_outline</i>
+    </div>
+    
+  </div>
+
+  <div class="card-panel recipie white row">
+    <img src="img/dish.png" alt="recipie thumb">
+    <div class="recipie-details">
+      <div class="recipie-title">Edamame Noodles</div>
+      <div class="recipie-ingredients">Edamame beans, Noodles, Garlic, oil</div>
+    </div>
+    <div class="recipie-delete">
+      <i class="material-icons">delete_outline</i>
+    </div>
+    
+  </div>
+
+  <div class="card-panel recipie white row">
+    <img src="img/dish.png" alt="recipie thumb">
+    <div class="recipie-details">
+      <div class="recipie-title">Edamame Noodles</div>
+      <div class="recipie-ingredients">Edamame beans, Noodles, Garlic, oil</div>
+    </div>
+    <div class="recipie-delete">
+      <i class="material-icons">delete_outline</i>
+    </div>
+    
+  </div>
+</div>
+
+<div class="center">
+  <a class="btn-floating btn-small  add-btn sidenav-trigger" data-target="side-form">
+    <i class="material-icons">add</i>
+     
+  </a>
+ </div>
+
+<div id="side-form" class="sidenav side-form">
+  <form class="add-recipie container section">
+    <h6>New Recipie</h6>
+    <div class="divider"></div>
+    <div class="input-field">
+      <input type="text" placeholder="eg. Ninja Soup" id="title" class="validate" >
+      <label for="title"> Recipie Title </label>
+    </div>
+    <div class="input-field">
+      <input type="text" placeholder="eg. tofu, mushroom, garlic" id="ingredients" class="validate" >
+      <label for="ingredients"> Ingredients </label>
+    </div>
+
+    <div class="input-field center">
+      <button class="btn-small"> Add</button>
+    </div>
+
+  </form>
+</div>
+
+
+
+<script src="js/ui.js"></script>
+
+</body>
+</html>
